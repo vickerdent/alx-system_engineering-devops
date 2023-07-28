@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#output files in directory with name text after first dash only
-for file in *; do
-    echo "$file" | cut -f 2 -d '-'
+#Displays the content directory in a list format after character '-'
+for i in *; do
+	echo "$i" | cut -f2 -d'-'
 done

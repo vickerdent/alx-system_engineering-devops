@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-#output a squence of numbers resembling a clock counter
-hour=0
-while [ $hour -lt 13 ]; do
-    echo Hour: $hour
-    minute=1
-    while [ $minute -lt 60 ]; do
-	echo $minute
-	((minute++))
-    done
-    ((hour++))
+# Displays the time for 12 hours and 59 minutes
+i=0
+while ((i <= 12)); do
+	echo "Hour: $i"
+	j=1
+	while ((j <= 59)); do
+		echo $j
+		((j+=1))
+	done
+	((i+=1))
 done
